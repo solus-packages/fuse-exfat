@@ -1,0 +1,19 @@
+name       : fuse-exfat
+version    : 1.1.0
+release    : 1
+source     :
+    - https://doc-08-68-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/ep5mbf5pr8dhscf2npk66haekuuuj2nu/1435118400000/11772781877916487120/*/0B7CLI-REKbE3VTdaa0EzTkhYdU0?e=download : 198c520e417e955dc5c08687c278e63eefa56719da4452aa4a605be0327f953e
+license    : GPL-3.0
+summary    : Free exFAT file system implementation
+description: |
+    Free exFAT file system implementation
+rundeps    :
+    - fuse
+builddeps  :
+    - pkgconfig(fuse)
+    - scons
+    - util-linux-devel
+    - exfat-utils
+install    : |
+    scons install DESTDIR=%installroot%/usr/bin
+    install -Dm444 fuse/mount.exfat-fuse.8 %installroot%/usr/share/man/man8/mount.exfat-fuse.8
