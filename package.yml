@@ -1,18 +1,19 @@
 name       : fuse-exfat
-version    : 1.2.0
-release    : 2
+version    : 1.2.7
+release    : 3
 source     :
-    - https://github.com/relan/exfat/archive/v1.2.0.tar.gz : e806a5275dfef8597c2c4bbe73699672f0fbb354034005ab41cf88e446a00196
+    - https://github.com/relan/exfat/archive/v1.2.7.tar.gz : bf9b26ed5002a45da75a9fba3bc5aafa67031addad205016c35141beb3c7f6b5
 license    : GPL-3.0
+component  : system.utils
 summary    : Free exFAT file system implementation
 description: |
     Free exFAT file system implementation
-rundeps    :
-    - fuse
 builddeps  :
     - pkgconfig(fuse)
     - util-linux-devel
     - exfat-utils
+rundeps    :
+    - fuse
 setup      : |
     autoreconf -vfi
     %configure
