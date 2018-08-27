@@ -1,8 +1,8 @@
 name       : fuse-exfat
-version    : 1.2.7
-release    : 3
+version    : 1.2.8
+release    : 4
 source     :
-    - https://github.com/relan/exfat/archive/v1.2.7.tar.gz : bf9b26ed5002a45da75a9fba3bc5aafa67031addad205016c35141beb3c7f6b5
+    - https://github.com/relan/exfat/archive/v1.2.8.tar.gz : 778474bfbcd92e35bba5b88bd7ad3f6400328256636abb9031bfcc1ce15ed887
 license    : GPL-3.0
 component  : system.utils
 summary    : Free exFAT file system implementation
