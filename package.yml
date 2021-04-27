@@ -1,6 +1,6 @@
 name       : fuse-exfat
 version    : 1.2.8
-release    : 4
+release    : 5
 source     :
     - https://github.com/relan/exfat/archive/v1.2.8.tar.gz : 778474bfbcd92e35bba5b88bd7ad3f6400328256636abb9031bfcc1ce15ed887
 license    : GPL-3.0
@@ -11,9 +11,9 @@ description: |
 builddeps  :
     - pkgconfig(fuse)
     - util-linux-devel
-    - exfat-utils
+    - exfatprogs
 rundeps    :
-    - fuse
+    - fuse2
 setup      : |
     autoreconf -vfi
     %configure
